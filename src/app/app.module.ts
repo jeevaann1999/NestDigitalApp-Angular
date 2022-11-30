@@ -8,6 +8,7 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { AdminLoginComponent } from './admin-login/admin-login.component';
 import { FormsModule } from '@angular/forms';
 import { EmployeePortalComponent } from './employee-portal/employee-portal.component';
+import { EmployeeRegistrationComponent } from './employee-registration/employee-registration.component';
 
 const myRoute:Routes=
 [
@@ -22,6 +23,10 @@ const myRoute:Routes=
 {
   path:"employee",
   component:EmployeePortalComponent
+},
+{
+  path:"employeereg",
+  component:EmployeeRegistrationComponent
 }
 ]
 
@@ -31,7 +36,8 @@ const myRoute:Routes=
     AppComponent,
     HomePageComponent,
     AdminLoginComponent,
-    EmployeePortalComponent
+    EmployeePortalComponent,
+    EmployeeRegistrationComponent
   ],
   imports: [
     BrowserModule,
