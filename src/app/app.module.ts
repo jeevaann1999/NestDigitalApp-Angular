@@ -9,6 +9,7 @@ import { AdminLoginComponent } from './admin-login/admin-login.component';
 import { FormsModule } from '@angular/forms';
 import { EmployeePortalComponent } from './employee-portal/employee-portal.component';
 import { EmployeeRegistrationComponent } from './employee-registration/employee-registration.component';
+import { AboutUsComponent } from './about-us/about-us.component';
 
 const myRoute:Routes=
 [
@@ -37,7 +38,8 @@ const myRoute:Routes=
     HomePageComponent,
     AdminLoginComponent,
     EmployeePortalComponent,
-    EmployeeRegistrationComponent
+    EmployeeRegistrationComponent,
+    AboutUsComponent
   ],
   imports: [
     BrowserModule,
