@@ -11,6 +11,7 @@ import { EmployeePortalComponent } from './employee-portal/employee-portal.compo
 import { EmployeeRegistrationComponent } from './employee-registration/employee-registration.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { GalleryComponent } from './gallery/gallery.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
 
 const myRoute:Routes=
 [
@@ -37,6 +38,10 @@ const myRoute:Routes=
 {
   path:"gallery",
   component:GalleryComponent
+},
+{
+  path:"contactus",
+  component:ContactUsComponent
 }
 ]
 
@@ -49,7 +54,8 @@ const myRoute:Routes=
     EmployeePortalComponent,
     EmployeeRegistrationComponent,
     AboutUsComponent,
-    GalleryComponent
+    GalleryComponent,
+    ContactUsComponent
   ],
   imports: [
     BrowserModule,
