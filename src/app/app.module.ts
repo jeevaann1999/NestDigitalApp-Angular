@@ -12,11 +12,12 @@ import { EmployeeRegistrationComponent } from './employee-registration/employee-
 import { AboutUsComponent } from './about-us/about-us.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 const myRoute:Routes=
 [
 {
-  path:"home",
+  path:"",
   component:HomePageComponent
 },
 {
@@ -55,7 +56,8 @@ const myRoute:Routes=
     EmployeeRegistrationComponent,
     AboutUsComponent,
     GalleryComponent,
-    ContactUsComponent
+    ContactUsComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
