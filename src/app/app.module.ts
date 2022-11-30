@@ -13,6 +13,8 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { ViewCoursesComponent } from './view-courses/view-courses.component';
+import { HttpClientModule } from '@angular/common/http'
 
 const myRoute:Routes=
 [
@@ -43,7 +45,12 @@ const myRoute:Routes=
 {
   path:"contactus",
   component:ContactUsComponent
+},
+{
+  path:"viewcourses",
+  component:ViewCoursesComponent
 }
+
 ]
 
 
@@ -57,13 +64,15 @@ const myRoute:Routes=
     AboutUsComponent,
     GalleryComponent,
     ContactUsComponent,
-    NavbarComponent
+    NavbarComponent,
+    ViewCoursesComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot(myRoute),
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
