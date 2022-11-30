@@ -10,6 +10,7 @@ import { FormsModule } from '@angular/forms';
 import { EmployeePortalComponent } from './employee-portal/employee-portal.component';
 import { EmployeeRegistrationComponent } from './employee-registration/employee-registration.component';
 import { AboutUsComponent } from './about-us/about-us.component';
+import { GalleryComponent } from './gallery/gallery.component';
 
 const myRoute:Routes=
 [
@@ -28,6 +29,14 @@ const myRoute:Routes=
 {
   path:"employeereg",
   component:EmployeeRegistrationComponent
+},
+{
+  path:"aboutus",
+  component:AboutUsComponent
+},
+{
+  path:"gallery",
+  component:GalleryComponent
 }
 ]
 
@@ -39,7 +48,8 @@ const myRoute:Routes=
     AdminLoginComponent,
     EmployeePortalComponent,
     EmployeeRegistrationComponent,
-    AboutUsComponent
+    AboutUsComponent,
+    GalleryComponent
   ],
   imports: [
     BrowserModule,
