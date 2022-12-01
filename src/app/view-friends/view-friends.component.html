@@ -5,13 +5,13 @@
             <div class="row g-3 mt-4">
                 <div class="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3" *ngFor="let i of friends">
 
-                    <div class="card" style="width: 18rem;height: 20rem;">
-                        <img src="..." class="card-img-top" alt="...">
+                    <div class="card" style="width: 18rem;height: 25rem;">
+                        <img height="200px" src="https://www.kindpng.com/picc/m/163-1636340_user-avatar-icon-avatar-transparent-user-icon-png.png" class="card-img-top" alt="...">
                         <div class="card-body">
-                          <h5 class="card-title">{{i.name}}</h5>
-                          <p class="card-text">{{i.friendName}}</p>
-                          <p class="card-text">{{i.friendNickName}}</p>
-                          <p class="card-text">{{i.DescribeYourFriend}}</p>
+                          <h5 class="card-title text-center">Name: {{i.name}}</h5>
+                          <p class="card-text text-center">Friend Name: {{i.friendName}}</p>
+                          <p class="card-text text-center">Friend Nickname: {{i.friendNickName}}</p>
+                          <p class="card-text text-center">Describe Your Friend: {{i.DescribeYourFriend}}</p>
                         </div>
                       </div>
                 </div>
