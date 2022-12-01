@@ -3,18 +3,51 @@
     <div class="row">
         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
             <div class="row g-3 mt-4">
-                <div class="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3" *ngFor="let i of friends">
 
-                    <div class="card" style="width: 18rem;height: 25rem;">
-                        <img height="200px" src="https://www.kindpng.com/picc/m/163-1636340_user-avatar-icon-avatar-transparent-user-icon-png.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title text-center">Name: {{i.name}}</h5>
-                          <p class="card-text text-center">Friend Name: {{i.friendName}}</p>
-                          <p class="card-text text-center">Friend Nickname: {{i.friendNickName}}</p>
-                          <p class="card-text text-center">Describe Your Friend: {{i.DescribeYourFriend}}</p>
-                        </div>
+                <ng-container *ngIf="loading; then loadingScreen; else dataScreen"></ng-container>
+
+                <ng-template #loadingScreen>
+                    <div class="spinner-border text-primary" role="status">
+                        <span class="visually-hidden">Loading...</span>
                       </div>
-                </div>
+                      <div class="spinner-border text-secondary" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                      </div>
+                      <div class="spinner-border text-success" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                      </div>
+                      <div class="spinner-border text-danger" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                      </div>
+                      <div class="spinner-border text-warning" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                      </div>
+                      <div class="spinner-border text-info" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                      </div>
+                      <div class="spinner-border text-light" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                      </div>
+                      <div class="spinner-border text-dark" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                      </div>
+                </ng-template>
+                
+                <ng-template #dataScreen>
+                    <div class="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3" *ngFor="let i of friends">
+
+                        <div class="card" style="width: 18rem;height: 25rem;">
+                            <img height="200px" src="https://www.kindpng.com/picc/m/163-1636340_user-avatar-icon-avatar-transparent-user-icon-png.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title text-center">Name: {{i.name}}</h5>
+                              <p class="card-text text-center">Friend Name: {{i.friendName}}</p>
+                              <p class="card-text text-center">Friend Nickname: {{i.friendNickName}}</p>
+                              <p class="card-text text-center">Describe Your Friend: {{i.DescribeYourFriend}}</p>
+                            </div>
+                          </div>
+                    </div>
+                </ng-template>
+ 
             </div>
         </div>
     </div>
