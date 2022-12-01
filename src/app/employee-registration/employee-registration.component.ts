@@ -1,5 +1,6 @@
 import { ThisReceiver } from '@angular/compiler';
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-employee-registration',
@@ -55,6 +56,7 @@ readValues=()=>{
   console.log(data)
   if (this.password==this.confirmPassword) {
     alert("Registered Successfully")
+    console.log(data)
   } else {
     alert("Password and Confirm Password does not match")
   }
