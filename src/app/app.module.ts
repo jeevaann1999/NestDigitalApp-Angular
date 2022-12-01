@@ -17,7 +17,9 @@ import { ViewCoursesComponent } from './view-courses/view-courses.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ViewFriendsComponent } from './view-friends/view-friends.component';
 import { AddFriendsComponent } from './add-friends/add-friends.component';
-import { AddCoursesComponent } from './add-courses/add-courses.component'
+import { AddCoursesComponent } from './add-courses/add-courses.component';
+import { Navbar2Component } from './navbar2/navbar2.component';
+import { Navbar3Component } from './navbar3/navbar3.component'
 
 const myRoute:Routes=
 [
@@ -83,7 +85,9 @@ const myRoute:Routes=
     ViewCoursesComponent,
     ViewFriendsComponent,
     AddFriendsComponent,
-    AddCoursesComponent
+    AddCoursesComponent,
+    Navbar2Component,
+    Navbar3Component
   ],
   imports: [
     BrowserModule,
